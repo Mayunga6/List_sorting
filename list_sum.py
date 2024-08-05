@@ -1,4 +1,3 @@
-
 try:
     number_list = input("Enter the numbers you want to find their sum separated by spaces: ")
     #Creates a list of strings from the input received
@@ -13,6 +12,7 @@ try:
     print("Total is: ", sum)
 
     sorted_num = []
+    #Sorting the list in ascending order
     for num in numbers:
         num = float(num)
         sorted_num.append(num)
@@ -24,6 +24,7 @@ try:
 except ValueError:
     print("Only integer or float values are allowed.")
     not_numbers = []
+    #adding non-integer and non-float values to the not_numbers list
     for num in numbers:
         try:
             num=float(num)
